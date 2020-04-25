@@ -1,0 +1,31 @@
+1：下载安装git  （默认你已经注册github账号）
+直接在官网上下载就行，非常方便
+官网链接：https://git-scm.com/
+
+2：注册账户
+Git要求每台电脑都要有自己的用户名(User Name)和邮箱(Email)
+打开命令提示符输入指令
+git config --global user.name "your name"
+git config --global user.email "your email"
+输入成功之后可以使用: git config --list  命令查看
+
+3：创建仓库
+在github上新建一个空仓库
+
+4：上传文件夹
+找到你想要上传的文件夹，然后单机右键，点击 Git Bash Here
+然后会出现命令行
+首先输入：
+git init
+其文件夹下会建立一个.git文件夹
+然后输入指令
+git remote add origin git@github.com:你的账户/你的仓库名称.git
+不出意外会报错，这是第一个麻烦的地方
+
+算了  先不写了，那个网页找不到了，先留下另一个网页把，反正我能用了，也没人看我这个项目
+https://blog.csdn.net/li_001/article/details/70245006
+
+
+
+
+
