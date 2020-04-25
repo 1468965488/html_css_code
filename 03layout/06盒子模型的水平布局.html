@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .outer{
+            width: 400px;
+            height: 200px;
+            border: 10px #cd6969 solid;
+        }
+        .inner{
+            width: 1000px;
+            height: 200px;
+            background-color: red;
+            margin-right: -800px;
+            /* 
+                元素水平方向的布局
+                    元素在其父元素中水平方向的位置由以下几个属性共同设置
+                        margin-left
+                        border-left
+                        padding-lef
+                        width
+                        padding-right
+                        border-right
+                        margin-right
+                    一个元素在其父元素中必须满足以下等式
+                        margin-left +
+                        border-left + 
+                        padding-lef +
+                        width       +
+                        padding-right +
+                        border-right + 
+                        margin-right =其父元素内容区的宽度
+                        以上等式必须满足
+
+                    但是上边明显不成立等式，就会发生过度约束
+                    则等式会自动调整
+                        调整的情况
+                        如果这7个值没有auto的情况 则浏览器会自动调整
+                        margin-right值以使等式成立
+                    这7个值中有3个值可以设置为auto
+                        width
+                        margin-left
+                        margin-right
+                        这三个值如果有auto 则会自动调整该值以使等式成立
+
+                    注意 width的值默认是auto
+
+                    如果将一个宽度和一个外边距设置为auto 则宽度会变为最大
+                    如果三个值都为auto 则宽度为最大
+
+                    如果左右两个边距都是auto 宽度值固定 则不足的部分会被边距评分
+                        所以我们经常利用这个特性设置某一个元素在其父元素中居中
+                        示例
+                            width:xxxpx;
+                            margin:0;
+
+                    当然 这一切的条件 子元素在父元素的内部存在
+             */
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="outer">
+        <div class="inner"></div>
+        
+    </div>
+</body>
+</html>

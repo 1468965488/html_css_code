@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../layout/css/reset.css">
+    <style>
+        .images{
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+            position: relative;
+            /* overflow: hidden; */
+        }
+        .images img{
+            width: 590px;
+        }
+        .images li{
+            position:absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        /* 通过修改元素的层级来显示指定的图片 */
+        .images li:nth-child(4){
+            z-index: 1;
+        }
+
+        .pointer {
+            position: absolute;
+            z-index: 9;
+            bottom: 10px;
+        }
+        .pointer a{
+            /* 设置元素想做浮动 */
+            float: left;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%;
+            margin-left: 20px;
+            /* 将背景颜色值设置到内容区，边框和内边距不设置颜色 */
+            background-clip: content-box;
+            background-color: rgba(255, 255, 255, .6);
+            border: 2px solid transparent;
+        }
+        .pointer a:hover{
+            background-color: #fff;
+            border: 2px solid rgba(255, 255, 255, .6);
+        }
+
+        /* .pointer a.active{
+        } */
+    </style>
+</head>
+
+<body>
+    <ul class="images">
+
+        <li class="items">
+            <a href="#">
+                <img  src="//img12.360buyimg.com/pop/s1180x940_jfs/t1/85128/22/17094/67367/5e81c396E4bef74e8/58b01c5ad2d95339.jpg.webp" alt="">
+            </a>
+        </li>
+        <li class="items">
+            <a href="#">
+                <img src="//img13.360buyimg.com/pop/s1180x940_jfs/t1/95654/10/16786/66736/5e7db7c5Edff9ce7f/5ccf747f742cc2a6.jpg.webp" alt="">
+            </a>
+        </li>
+        <li class="items">
+            <a href="#">
+                <img src="//img14.360buyimg.com/pop/s1180x940_jfs/t1/110562/14/10737/42247/5e81bb76E6fffa006/b3f703f750bd37ea.jpg.webp" alt="">
+            </a>
+        </li>
+        <li class="items">
+            <a href="#">
+                <img src="//imgcps.jd.com/ling/100008348542/5omL5py66LSt5a6e5oOg/5aSH6LSn6LaF5YC8/p-5bd8253082acdd181d02fa6d/a0380933/590x470.jpg" alt="">
+                
+            </a>
+        </li>
+        <li class="items">
+            <a href="#">
+                <img src="//img12.360buyimg.com/pop/s1180x940_jfs/t1/89142/16/15288/98758/5e6f2cffE3c6f4c20/932c990a26786aaf.jpg.webp" alt="">
+            </a>
+        </li>
+
+        <div class="pointer">
+            <a class="active" href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </ul>
+
+
+
+</body>
+
+</html>
+
+
+<!-- 590*470 -->

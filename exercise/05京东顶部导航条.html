@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../03layout/css/reset.css">
+    <link rel="stylesheet" href="../06font&background/font/fontawesome-free-5.13.0-web/css/all.css">
+
+    <style>
+        body{
+            font-size: 12px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        .container{
+            height: 30px;
+            background-color: #e3e3e3;
+            line-height: 30px;
+        }
+
+        .above{
+            margin: 0 auto;
+            width: 1190px;
+            /* background-color: #cd6969; */
+        }
+
+        .location{
+            float: left;
+        }
+        .items{
+            float: right;
+        }
+        .items li{
+            float: left;
+        }
+
+        .bk{
+            float: left;
+            display: block;
+            border-left: gray 1px solid;
+            margin: 10px 10px;
+            height: 10px;
+        }
+        .items a,
+        .items .np{
+            color: #999;
+        }
+        .items #q,
+        .items #f{
+            color: red;
+        }
+
+        .items a:hover{
+            color: red;
+        }
+
+        .current-city{
+            position: relative;
+            width: 50px;
+            padding-left: 5px;
+            border: 1px solid transparent;
+        }
+        /* .i{
+            color: red;
+        } */
+        .city-list{
+            width: 320px;
+            height: 436px;
+            background-color: white;
+            border: 1px solid rgb(204, 204, 204);
+            display:none;
+            box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+            position: absolute;
+            left: -1px;
+        }
+        
+
+        .location:hover .city-list{
+            display: block;
+        }
+        .current-city:hover{
+            background-color: white;
+            border: 1px solid #999;
+            border-bottom: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="above">
+
+            <div class="location">
+                <div class="current-city">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="javascript:;">北京</a>
+
+                    <div class="city-list"></div>
+                </div>
+            </div>
+
+            <ul class="items">
+                <li>
+                    <a href="javascript:;">你好，请登录</a>
+                </li>
+
+                <li>
+                    <a id="f" href="javascript:;">免费注册</a>
+                </li>
+                <span class="bk"></span>
+
+                <li>
+                    <a href="javascript:;">我的订单</a>
+                </li>
+                <span class="bk"></span>
+
+                <li>
+                    <a href="javascript:;">我的京东</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <span class="bk"></span>
+
+                <li>
+                    <a href="javascript:;">京东会员</a>
+                </li>
+                <span class="bk"></span>
+
+                <li>
+                    <a id="q" href="javascript:;">企业采购</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <span class="bk"></span>
+
+                <li>
+                    <span class="np">客户服务</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <span class="bk"></span>
+
+                <li>
+                    <span class="np">网站导航</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+                <span class="bk"></span>
+
+                <li>
+                    <span class="np">手机京东</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+            </ul>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+</html>

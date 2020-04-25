@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul{
+            width: 600px;
+            height: 800px;
+            border: 10px red solid;
+            font-size: 50px;
+            display: flex;
+            flex-flow: row wrap;
+            /* flex-wrap: wrap-reverse; */
+            /* 
+                flex-wrap  
+                设置弹性元素是否在弹性元素中是否换行
+                可选值  
+                    nowrap 默认值 元素不换行
+                    wrap   元素沿着副轴方向自动换行
+                    wrap-reverse 沿着副轴反方向换行
+            */
+            /*  
+                flex-flow  wrap 和 direction 的简写属性
+                flex-flow wrap row
+            */
+
+            /* 
+                justify-content
+                    如何分配主轴上的空白空间
+                    可选值
+                        flex-start  沿主轴起边排列
+                        flex-end    沿主轴终边排列
+                        flex-center 元素居中排列
+                        space-around 空白分不到元素两侧
+                        space-evenly 空白分配到元素单侧
+                        space-between 分配到元素中间
+
+            */
+            /* justify-content: space-between; */
+            /* 
+                align-items  元素在副轴上如何对齐
+                元素之间的关系
+                    可选值
+                        stretch  默认值 将元素的长度设置为相同的值
+                        flex-start 元素不会拉伸 沿着副轴起边对齐
+                        flex-end  元素不会拉伸 沿着副轴终边对齐
+                        center 居中
+                        base-line  基线对齐
+            */
+
+            align-items: stretch;
+            /* 
+                align-content 
+                副轴空白空间的分布
+                可选值 和上边justify-content一样
+            */
+
+
+
+
+        }
+
+
+        li{
+            width: 200px;
+            /* height: 100px; */
+            background-color: #bfa;
+
+
+            flex-shrink: 0;
+        }
+        li:nth-child(2){
+            /* align-self: ; */
+            /*
+                可以覆盖align-items
+            */
+
+            background-color: pink;
+        }
+        li:nth-child(3){
+            background-color: #cd6969;
+        }
+        li:nth-child(4){
+            background-color: yellow;
+        }
+        li:nth-child(5){
+            background-color: silver;
+        }
+    </style>
+
+</head>
+<body>
+
+
+     <ul>
+         <li>1</li>
+
+         <li>2
+             <div>2</div>
+         </li>
+         <li>3
+                 <div>3</div>
+                 <div>3</div>
+         </li>
+         <li>4</li>
+         <li>5</li>
+     </ul>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../layout/css/reset.css">
+    <!-- <style>
+        .news{
+            width: 300px;
+            height: 300px;
+            background-color: #bfa;
+        }
+        
+        .item a{
+            font-size: 14px;
+            color: #000;
+            text-decoration: none;
+        }
+        .item a:hover{
+            color:chocolate;
+        }
+        .item{
+            margin-bottom: 10px;
+        }
+    </style> -->
+    <style>
+        body {
+            background-color:#bfa;
+        }
+            /* 统一去除下划线 */
+        a{
+            text-decoration: none;
+        }
+        .news-wrapper {
+            height: 350px;
+            width: 300px;
+            background-color: #fff;
+            margin: 50px auto;
+            border-top: #ddd 1px solid;
+        }
+
+        .news-wrapper h2 {
+            height: 30px;
+            /* 为了边框和文字宽度一致 需要将h2转换为行内元素 */
+            display: inline-block;
+            border-top: 1px red solid;
+            /* 通过margin-top 将h2上移 让边框重合 */
+            margin-top: -1px;
+            padding-top: 10px;
+        }
+        .news-wrapper h2 a{
+            /* 去除下划线 */
+            text-decoration: none;
+            color :#404068;
+            /* 设置文字加粗 */
+            font-weight: bold;
+        }
+
+
+        /* 设置图片的文字效果 */
+        .img-title{
+            margin-top: -30px;
+            padding-left: 15px;
+            color: white;
+            font-size: 21px;
+            font-weight: blod;
+        }
+        
+        /*  固定图片高度 防止下部文字挤上去 */
+        .img {
+            height: 150px;
+        }
+        /* 文字整体往下移 */
+        .news{
+            margin-top: 14px;
+            /* padding-left: 20px; */
+            /* list-style :square; */
+        }
+
+        .news li::before{
+            content: "$";
+            color:#ddd;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        li{
+            margin-bottom: 17px;
+        }
+        .news li a{
+            font-size :14px;
+            color: #666;
+
+        }
+
+        .news li a:hover{
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <nav class="news">
+        <div class="item">
+            <img src="https://cms-bucket.ws.126.net/2020/0330/ddf11b02p00q7zmbt0038c0008d0046c.png?imageView&thumbnail=300y150&type=webp" alt="">
+        </div>
+        <div class="item">
+            <a href="https://www.baidu.com">楼市魔幻重启！一大波房潮正在上演</a>
+        </div>
+        <div class="item">
+            <a href="https://www.baidu.com">对话餐饮业者：热干面六块涨到八块被投诉</a>
+        </div>
+        <div class="item">
+            <a href="https://www.baidu.com">全球产业链重构 黄奇帆呼吁做好这些事</a>
+        </div>
+        <div class="item">
+            <a href="https://www.baidu.com">疫情冲击下消失的订单</a>
+
+        </div>
+
+    </nav> -->
+    <!-- 创建新闻列表的外层容器 -->
+    <div class="news-wrapper">
+        <!-- 创建一个标题标签 -->
+        <h2>
+            <a href="https://www.baidu.com">体育</a>
+        </h2>
+
+        <!-- 创建一个图片容器 -->
+        <div class="img">
+            <a href="#">
+                <img src="https://cms-bucket.ws.126.net/2020/0330/ddf11b02p00q7zmbt0038c0008d0046c.png?imageView&thumbnail=300y150&type=webp"
+                    alt="费德勒">
+                <!-- 创建图片标题 -->
+                <h3 class="img-title">川建国辛苦了</h3>
+            </a>
+        </div>
+        <!-- 新闻列表 -->
+        <ul class="news">
+            <li>
+                <a href="#">乔治:我爱LA 喜欢和LBJ一起打球</a>
+            </li>
+            <li>
+                <a href="#">格林:3年前降薪就在等KD 特制T恤嘲讽LBJ</a>
+            </li>
+            <li>
+                <a href="#">塔克4000双鞋让保罗羡慕嫉妒 乔丹被震惊</a>
+            </li>
+            <li>
+                <a href="#">CBA下季新赛制:常规赛4组循环 增至46轮</a>
+            </li>
+
+        </ul>
+    </div>
+</body>
+
+</html>

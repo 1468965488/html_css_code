@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 800px;
+            height: 800px;
+            background-color: #bfa;
+            overflow: hidden;
+        }
+        .box1 div{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 100px;
+        }
+
+        .box2{
+            background-color: #cd6969;
+
+            /* 
+                设置background-origin: 2px;的动画
+                animation-name: ;  对当前元素生效的关键帧的名字
+                animation-duration 动画持续时间
+                animation-timing-function 时序函数
+                animation-iteration-count: 5; 动画重复次数
+                    可选值 
+                        次数 或者infinite（无线执行）
+                animation-direction
+                    指定动画运行的方向
+                        normal 默认从from到to执行
+                        reverse 从to到from执行
+                        alternate  来来回回
+                animation-play-state
+                    可选值
+                    running 动画执行
+                    paused 动画暂停
+
+                animation-fill-mode
+                    默认值 none 动画执行完毕回来原来位置
+                        forword 动画执行完毕停止在to的位置
+                        backword 动画演示等待时元素就会处于开始位置
+                        both    把上边俩加一起
+                        https://www.demo.fishc.com/html5/lesson0/love
+
+            */
+            animation-name: test;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-direction:alternate ;
+            animation-play-state: running;
+            animation-fill-mode:forwards;
+        }
+
+
+
+        /* 
+            动画
+            动画和过渡类似，都是可以实现一些动态的效果
+                不同的是过度需要在某个属性发生变化时猜出发
+                动画可以自动触发动态效果
+
+                设置动画效果，必须先要设置一个挂件真，关键帧设置动画执行的每一个步骤                
+        */
+
+        @keyframes test{
+            /* 表示动画的开始位置 也可以使用0%表示 */
+            from{
+                margin-left: 0;
+            }
+            /* 表示动画的结束位置  也可以使用100%*/
+            to{
+                margin-left: 700px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <!-- <div class="box3"></div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        html{
+            perspective: 800px;
+            /* 设置视距 */
+        }
+
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 0 auto;
+            transform: translateZ(0px);
+            transition: all 2s;
+        }
+        .box1:hover{
+            transform: rotateX(45deg) translateZ(100px);
+            backface-visibility: hidden;
+
+        }
+        /* 
+            通过旋转可以使元素沿着xyz轴选转指定读书
+                rotateX()  括号内可以是xxdeg 也可以是xxturn
+
+                backface-visibility
+                    背面是否显示
+                    visible  显示
+                    hidden  隐藏
+        */
+
+    </style>
+</head>
+<body>
+    
+    <div class="box1"></div>
+</body>
+</html>

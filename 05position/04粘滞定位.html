@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航条</title>
+    <link rel="stylesheet" href="../layout/css/reset.css">
+
+    <!-- <style>
+        .leader {
+
+            width: 1210px;
+            height: 48px;
+            background-color: #bfa;
+            margin: 50px auto;
+        }
+
+        .item{
+            height: 48px;
+            background-color: #cd6969;
+            float:left;
+        }
+        .item:hover{
+            background-color: gray;
+        }
+        a{
+            text-decoration: none;
+        }
+        #first{
+            width: 166px;
+        }
+        #second{
+            width: 191px;
+        }
+        #third{
+            width: 175px;
+        }
+        #fourth{
+            width: 198px;
+        }
+        #fifth{
+            width: 113px;
+        }
+        #sixth{
+            width:197px;
+        }
+        #seventh{
+            width:170px;
+        }
+        .item a{
+            display: inline-block;
+            margin: 12px auto;
+            padding-left: 40px;
+            /* padding: 0 auto; */
+            font-size: 18px;
+        }
+    </style> -->
+    
+
+    <style>
+
+        body{
+            height: 3000px;
+        }
+        .nav{
+            /* 设置宽高 */
+            width: 1210px;
+            height: 48px;
+            background-color: #E8e8e8;
+
+            margin: 50px auto;
+
+            /* 
+                粘滞定位
+                当元素的position设置为sticky时则开启了元素的粘滞定位
+                粘滞定位和相对定位特点基本一致
+                    不同的是年指定为可以在元素到某一位置的时候将其固定
+             */
+             position: sticky;
+             top: 0;
+
+        }
+        /* 设置li浮动 */
+        .nav li{
+            float :left ;
+            background-color: #cd6969;
+            height: 48px;
+            /* 将文字在父元素中垂直居中 */
+            line-height: 48px;
+        }
+        /* 设置a的样式 */
+        .nav a{
+            /* 去除下划线 */
+            text-decoration: none;
+            color:#777;
+            font-size: 18px;
+            /* 将a转换为块元素 */
+            display: block;
+            height: 48px;
+            padding: 0 42px;
+
+        }
+
+        /* 设置鼠标移入 */
+        .nav a:hover{
+            background-color: #3f3f3f;
+            color:#E8e8e8
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <div class="leader">
+        <div class="item" id="first">
+            <a href="#">HTML/CSS</a>
+        </div>
+
+        <div class="item" id="second">
+            <a href="#">Browser Side</a>
+        </div>
+
+        <div class="item" id="third">
+            <a href="#">Serve Side</a>
+        </div>
+
+        <div class="item" id="fourth">
+            <a href="#">Programing</a>
+        </div>
+
+        <div class="item" id="fifth">
+            <a href="#">XML</a>
+        </div>
+
+        <div class="item" id="sixth">
+            <a href="#">Web Building</a>
+        </div>
+
+        <div class="item" id="seventh">
+            <a href="#">Reference</a>
+        </div>
+
+    </div> -->
+
+    <ul class="nav">
+        <li>
+            <a href="#">HTML/CSS</a>
+        </li>
+        <li>
+            <a href="#">Broser Side</a>
+        </li>
+        <li>
+            <a href="#">Serve Side</a>
+        </li>
+        <li>
+            <a href="#">Programing</a>
+        </li>
+        <li>
+            <a href="#">XML</a>
+        </li>
+        <li>
+            <a href="#">Web Building</a>
+        </li>
+        <li>
+            <a href="#">Reference</a>
+        </li>
+    </ul>
+</body>
+
+</html>

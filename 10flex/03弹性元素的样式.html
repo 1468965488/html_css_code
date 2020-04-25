@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul {
+            width: 600px;
+            height: 800px;
+            border: 10px red solid;
+            font-size: 50px;
+            display: flex;
+            flex-flow: row wrap;
+
+
+
+        }
+
+
+        li {
+            width: 200px;
+            background-color: #bfa;
+            /* 
+                弹性元素的增长系数
+                flex-grow
+                弹性元素的缩减系数
+                flex-shrink
+
+
+                flex-basic  元素基础长度
+                默认值是auto 如果传递具体数，以该数为准
+            
+            */
+
+
+            /* 
+                flex可以设置弹性元素所有的三个样式
+                    flex 增长 缩减 基础
+                    默认值为
+                    initial   0 1 auto
+                    可以写auto 1 1 auto
+                    none 弹性元素没有缩减
+            */
+
+            /* 
+                order 决定元素的排列顺序
+                用法
+                    order:1 ;
+                    order:2 ;
+                    order:3 ;
+
+            */
+            flex-shrink: 0;
+        }
+
+        li:nth-child(2) {
+
+            background-color: pink;
+        }
+
+        li:nth-child(3) {
+            background-color: #cd6969;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+
+    </ul>
+</body>
+
+</html>

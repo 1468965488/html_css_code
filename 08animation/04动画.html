@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .outer{
+            height: 500px;
+            border-bottom: 10px solid black;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        .box1{
+            width: 100px;
+            border-radius: 50%;
+            height: 100px;
+            background-color: #cd6969;
+            animation: fell 2s forwards ease-in;
+        }
+
+        @keyframes fell{
+            from{
+                margin-top: 0;
+            }
+
+            33%{
+                margin-top: 400px;
+                animation-timing-function: ease-out;
+            }
+
+            66%{
+                margin-top: 10px;
+            }
+
+            to{
+                margin-top: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

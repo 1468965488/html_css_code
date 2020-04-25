@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        html{
+            perspective: 800px;
+        }
+        .cube{
+            width: 80px;
+            height: 80px;
+            margin: 100px auto;
+            position: relative;
+            /* 设置3d变形效果 */
+            transform-style: preserve-3d;
+            transform: rotateX(45deg) rotateZ(45deg);
+            /* transform: ; */
+            animation: chess 2s infinite;
+        }
+        .cube>div{
+            width: 80px;
+            height: 80px;
+            /* 为元素设置透明效果 */
+            opacity: .7;
+            position: absolute;
+        }
+
+        img{
+            vertical-align: top;
+        }
+
+        .box1{
+            transform: rotateY(90deg) translateZ(40px);
+            /* transform: translateZ(40px); */
+        }
+        .box2{
+            transform: rotateY(-90deg)  translateZ(40px);
+            
+        }
+        .box3{
+            transform: rotateX(90deg) translateZ(40px);
+        }
+
+        .box4{
+            transform: rotateX(-90deg) translateZ(40px);
+        }
+
+        .box5{
+            transform:  translateZ(40px);
+        }
+
+        .box6{
+            transform:  rotateY(180deg) translateZ(40px);
+        }
+
+
+        @keyframes chess{
+            from{
+                transform: rotateX(0) rotateZ(0);
+            }
+
+            to{
+                transform: rotateX(360deg) rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cube">
+        <div class="box1">
+            <img src="../08animation/img/1.png" alt="">
+        </div>
+        <div class="box2">
+            <img src="../08animation/img/2.png" alt="">
+        </div>    
+        <div class="box3">
+            <img src="../08animation/img/3.png" alt="">
+        </div>
+        <div class="box4">
+            <img src="../08animation/img/4.png" alt="">
+        </div>     
+        <div class="box5">
+            <img src="../08animation/img/5.png" alt="">
+        </div>
+        <div class="box6">
+            <img src="../08animation/img/6.png" alt="">
+        </div>  
+
+    </div>
+</body>
+</html>

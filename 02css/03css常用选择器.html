@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+            将所有段落设置为红色字体
+
+            元素选择器
+                作用：根据标签来选中指定的元素
+                语法：标签名{}
+                举例： p{}  h1{} div{}
+         */
+        /* p{
+            color:cyan;
+        } */
+
+        /* 将第二句设置为红色 别的不管
+            id选择器 根据元素的id值选中一个元素
+            语法 #id属性值{}
+
+            例子#second{}
+         */
+            /* #second{
+                color: red;
+            } */
+
+        /*
+            现在我们又向把第一和第三个设置成蓝色
+            涉及到新标签的属性， 他和id类似 不同的是class可以重复使用            
+            语法：.class{} 大括号内放名值对
+            同一个元素可以指定多个class属性
+          */
+            /*         
+            .double{
+                color: blue;
+            } */
+
+
+            /* 
+                通配选择器
+                作用选中页面中的所有元素
+                语法 ： *
+             */
+
+            *{
+                color: red;
+            }
+    </style>
+</head>
+<body>
+    
+
+    <p class="double">渔舟唱晚，响穷彭蠡之滨</p>
+    <p id="second">雁阵惊寒，声断衡阳之浦</p>
+    <p class="double">雁阵惊寒，声断衡阳之浦</p>
+    <p>雁阵惊寒，声断衡阳之浦</p>
+    <p>雁阵惊寒，声断衡阳之浦</p>
+    <p>雁阵惊寒，声断衡阳之浦</p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            height: 100px;width: 100px;
+            background-color: #cd6969;
+            transition: 2s;
+            margin: 100px;
+
+            /* 
+                指定缩放的基点
+                默认值是中间
+            */
+            transform-origin: 1px 1px;
+        }
+        .box1:hover{
+            /* 
+                scaleX x轴放大
+                scaleY y轴放大
+                scale  都放大
+            */
+            transform: scaleX(2);
+
+        }
+
+        .img-wrapper{
+            width: 200px;
+            height: 200px;
+            border: 1px red solid;
+            overflow: hidden;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            transition: .3s;
+        }
+
+        .img-wrapper:hover img{
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+
+    <div class="img-wrapper">
+        <img src="./1.jpg" >
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 100vw;
+            height: 300px;
+            background-color: #cd6969;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 
+        不同的设备完美视口的大小是不一样的
+        iphone6 -- 375
+        iphone6plus -- 414
+
+        由于不同设备视口不同，所以同样的375在不同的设备下意义是不一样的
+        所以在移动端开发，就不能使用像素来进行布局了
+
+        vw 表示的是视口的宽度
+        100vw = 1个视口的宽度 
+        1vw 表示1%视口宽度
+                
+
+     -->
+     <div class="box1"></div>
+</body>
+</html>

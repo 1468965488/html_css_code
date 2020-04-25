@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #box1{
+            color: black;
+        }
+        div{
+            color: red;
+        }
+        .red{
+            color: green;
+        }
+
+        div,p,span{
+            color: cyan;
+        }
+    /* 
+        样式的冲突
+            当我们通过不同的选择器，选中相同的元素并且为相同的样式设置不同的值时
+            就发生了冲突
+            当发生冲突时， 应该用哪个由选择器的权重（优先级）决定
+
+            选择器的权重
+                内联样式        1,0,0,0
+                id选择器        0,1,0,0
+                类和伪类选择器   0,0,1,0
+                元素选择器       0,0,0,1
+                统配选择器       0,0,0,0
+                继承的样式没有优先级
+            比较优先级时需要将所有选择器的优先级相加进行计算， 最后优先级越高， 则越优先显示
+            分组选择器时单独计算的
+            选择器的累加不会超过其最大的数量级
+            类选择器再高也不会超过id选择器
+
+            优先级相同则靠后的生效
+
+            可以在样式的某一个样式添加一个 !important
+            该样式可以添加一个最高优先级，对，最高
+            但是在开发中这个玩意一定要慎用！加上之后js也改不了
+    */
+
+
+        
+    </style>
+</head>
+<body>
+        <div id="box1" class="red">
+            我是一个div
+        </div>
+
+
+</body>
+</html>

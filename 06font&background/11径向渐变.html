@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box1{
+            width: 300px;
+            height: 300px;
+            /* 
+                radial-gradient() 径向渐变
+                莫嫩情况下，径向渐变的形状是根据元素的星族行来计算的
+                    正方形--》圆型
+                    长方形--》椭圆形
+
+                    也可以手动指定径向渐变的大小 如（100px 100px）
+                    circle 
+                    ellipse
+
+                    也可以指定渐变的位置
+                    100px 100px at 0 0,red, yellow
+
+                    语法：
+                    radial-graient（大小 at 位置 ，颜色 位置 ，颜色 位置）
+                        circle 原型
+                        ellipse 椭圆
+                        closest-side 近边
+                        farthese-side 近边
+                        closest-corner 近角
+                        farthese-corner 近角
+
+             */
+            background-image: radial-gradient( at 0 0,red, yellow);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>
